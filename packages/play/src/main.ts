@@ -1,6 +1,6 @@
-import { createApp } from 'vue'
-import './style.css'
-import App from './App.vue'
-import VElement from 'v-element'
+import { createApp } from 'vue';
+import App from './App.vue';
+import ErUiElement from 'er-ui-element';
+import "../../core/dist/index.css";
 
-createApp(App).use(VElement).mount('#app')
+createApp(App).use(ErUiElement).mount('#app')

@@ -1,8 +1,11 @@
-import { makeInstaller } from "@v-element/utils";
+import { makeInstaller } from "@er-ui-element/utils";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from '@fortawesome/free-solid-svg-icons'
 import components from "./components";
-import '@v-element/theme/index.css'
+import '@er-ui-element/theme/index.css'
 
+library.add(fas)
 const installer = makeInstaller(components);
 
-export * from '@v-element/components';
+export * from '../components';
 export default installer;

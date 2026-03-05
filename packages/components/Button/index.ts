@@ -1,4 +1,8 @@
 import Button from './Button.vue'
-import { withInstall } from '@v-element/utils'
+import ButtonGroup from './ButtonGroup.vue'
+import { withInstall } from '@er-ui-element/utils'
 
 export const ErButton = withInstall(Button)
+export const ErButtonGroup = withInstall(ButtonGroup)
+
+export * from './types'
