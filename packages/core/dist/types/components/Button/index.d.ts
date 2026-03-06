@@ -1,14 +1,14 @@
 export declare const ErButton: {
     new (...args: any[]): import('vue').CreateComponentPublicInstanceWithMixins<Readonly<import('vue').ExtractPropTypes<{
         size: {
-            type: import('vue').PropType<import('./types').ButtonSize>;
+            type: import('vue').PropType<import('packages/core').ButtonSize>;
         };
         icon: {
             type: import('vue').PropType<"string">;
             required: true;
         };
         type: {
-            type: import('vue').PropType<import('./types').ButtonType>;
+            type: import('vue').PropType<import('packages/core').ButtonType>;
         };
         circle: {
             type: import('vue').PropType<boolean>;
@@ -19,7 +19,7 @@ export declare const ErButton: {
             default: string;
         };
         nativeType: {
-            type: import('vue').PropType<import('./types').NativeType>;
+            type: import('vue').PropType<import('packages/core').NativeType>;
             default: string;
         };
         disabled: {
@@ -53,11 +53,14 @@ export declare const ErButton: {
         onClick?: ((val: MouseEvent) => any) | undefined;
     }>, {
         ref: import('vue').Ref<HTMLButtonElement | void>;
+        disabled: import('vue').ComputedRef<boolean>;
+        size: import('vue').ComputedRef<import('packages/core').ButtonSize | "">;
+        type: import('vue').ComputedRef<import('packages/core').ButtonType | "">;
     }, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
         click: (val: MouseEvent) => void;
     }, import('vue').PublicProps, {
         tag: string | import('vue').Component;
-        nativeType: import('./types').NativeType;
+        nativeType: import('packages/core').NativeType;
         useThrottle: boolean;
         throttleDuration: number;
     }, true, {}, {}, import('vue').GlobalComponents, import('vue').GlobalDirectives, string, {}, any, import('vue').ComponentProvideOptions, {
@@ -69,14 +72,14 @@ export declare const ErButton: {
         Defaults: {};
     }, Readonly<import('vue').ExtractPropTypes<{
         size: {
-            type: import('vue').PropType<import('./types').ButtonSize>;
+            type: import('vue').PropType<import('packages/core').ButtonSize>;
         };
         icon: {
             type: import('vue').PropType<"string">;
             required: true;
         };
         type: {
-            type: import('vue').PropType<import('./types').ButtonType>;
+            type: import('vue').PropType<import('packages/core').ButtonType>;
         };
         circle: {
             type: import('vue').PropType<boolean>;
@@ -87,7 +90,7 @@ export declare const ErButton: {
             default: string;
         };
         nativeType: {
-            type: import('vue').PropType<import('./types').NativeType>;
+            type: import('vue').PropType<import('packages/core').NativeType>;
             default: string;
         };
         disabled: {
@@ -121,9 +124,12 @@ export declare const ErButton: {
         onClick?: ((val: MouseEvent) => any) | undefined;
     }>, {
         ref: import('vue').Ref<HTMLButtonElement | void>;
+        disabled: import('vue').ComputedRef<boolean>;
+        size: import('vue').ComputedRef<import('packages/core').ButtonSize | "">;
+        type: import('vue').ComputedRef<import('packages/core').ButtonType | "">;
     }, {}, {}, {}, {
         tag: string | import('vue').Component;
-        nativeType: import('./types').NativeType;
+        nativeType: import('packages/core').NativeType;
         useThrottle: boolean;
         throttleDuration: number;
     }>;
@@ -132,14 +138,14 @@ export declare const ErButton: {
     __isSuspense?: never;
 } & import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
     size: {
-        type: import('vue').PropType<import('./types').ButtonSize>;
+        type: import('vue').PropType<import('packages/core').ButtonSize>;
     };
     icon: {
         type: import('vue').PropType<"string">;
         required: true;
     };
     type: {
-        type: import('vue').PropType<import('./types').ButtonType>;
+        type: import('vue').PropType<import('packages/core').ButtonType>;
     };
     circle: {
         type: import('vue').PropType<boolean>;
@@ -150,7 +156,7 @@ export declare const ErButton: {
         default: string;
     };
     nativeType: {
-        type: import('vue').PropType<import('./types').NativeType>;
+        type: import('vue').PropType<import('packages/core').NativeType>;
         default: string;
     };
     disabled: {
@@ -184,11 +190,14 @@ export declare const ErButton: {
     onClick?: ((val: MouseEvent) => any) | undefined;
 }>, {
     ref: import('vue').Ref<HTMLButtonElement | void>;
+    disabled: import('vue').ComputedRef<boolean>;
+    size: import('vue').ComputedRef<import('packages/core').ButtonSize | "">;
+    type: import('vue').ComputedRef<import('packages/core').ButtonType | "">;
 }, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
     click: (val: MouseEvent) => void;
 }, string, {
     tag: string | import('vue').Component;
-    nativeType: import('./types').NativeType;
+    nativeType: import('packages/core').NativeType;
     useThrottle: boolean;
     throttleDuration: number;
 }, {}, string, {}, import('vue').GlobalComponents, import('vue').GlobalDirectives, string, import('vue').ComponentProvideOptions> & import('vue').VNodeProps & import('vue').AllowedComponentProps & import('vue').ComponentCustomProps & (new () => {
@@ -197,10 +206,10 @@ export declare const ErButton: {
 export declare const ErButtonGroup: {
     new (...args: any[]): import('vue').CreateComponentPublicInstanceWithMixins<Readonly<import('vue').ExtractPropTypes<{
         size: {
-            type: import('vue').PropType<import('./types').ButtonSize>;
+            type: import('vue').PropType<import('packages/core').ButtonSize>;
         };
         type: {
-            type: import('vue').PropType<import('./types').ButtonType>;
+            type: import('vue').PropType<import('packages/core').ButtonType>;
         };
         disabled: {
             type: import('vue').PropType<boolean>;
@@ -214,10 +223,10 @@ export declare const ErButtonGroup: {
         Defaults: {};
     }, Readonly<import('vue').ExtractPropTypes<{
         size: {
-            type: import('vue').PropType<import('./types').ButtonSize>;
+            type: import('vue').PropType<import('packages/core').ButtonSize>;
         };
         type: {
-            type: import('vue').PropType<import('./types').ButtonType>;
+            type: import('vue').PropType<import('packages/core').ButtonType>;
         };
         disabled: {
             type: import('vue').PropType<boolean>;
@@ -228,10 +237,10 @@ export declare const ErButtonGroup: {
     __isSuspense?: never;
 } & import('vue').ComponentOptionsBase<Readonly<import('vue').ExtractPropTypes<{
     size: {
-        type: import('vue').PropType<import('./types').ButtonSize>;
+        type: import('vue').PropType<import('packages/core').ButtonSize>;
     };
     type: {
-        type: import('vue').PropType<import('./types').ButtonType>;
+        type: import('vue').PropType<import('packages/core').ButtonType>;
     };
     disabled: {
         type: import('vue').PropType<boolean>;

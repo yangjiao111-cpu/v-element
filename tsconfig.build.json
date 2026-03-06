@@ -5,7 +5,8 @@
         "useDefineForClassFields": true,
         "module": "ESNext",
         "types": [
-            "vitest/globals"
+            "vitest/globals",
+            "node"
         ],
         "lib": [
             "ES2020",
@@ -25,7 +26,13 @@
         "strict": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "noFallthroughCasesInSwitch": true
+        "noFallthroughCasesInSwitch": true,
+        "baseUrl": "./",
+        "paths": {
+            "@er-ui-element/components": [
+                "./packages/components"
+            ]
+        }
     },
     "include": [
         "env.d.ts",

@@ -1,14 +1,24 @@
-import { m as o } from "./utils-CGuI4S4L.js";
-import { library as r } from "@fortawesome/fontawesome-svg-core";
-import { fas as t } from "@fortawesome/free-solid-svg-icons";
-import { E as a, a as m } from "./Button-DERRWSNm.js";
-import { E as s } from "./Icon-Ctpwk2P9.js";
-const n = [a, s, m];
-r.add(t);
-const E = o(n);
+import { m as _ } from "./utils-s2vBiec7.js";
+import { library as o } from "@fortawesome/fontawesome-svg-core";
+import { fas as n } from "@fortawesome/free-solid-svg-icons";
+import { E as t, a as r } from "./Button-OJmZRB1m.js";
+import { a as s } from "./Icon-BbgP-TA1.js";
+import { E as a, a as e } from "./Collapse-eib3Llvu.js";
+import { E as i } from "./Alert-CWMtxCOq.js";
+const m = [t, s, r, a, e, i];
+!function() {
+  {
+    const _2 = "\n____________________________________________\n\n    ___________       ____ ___.___ \n    _   _____/______|    |      |\n    |    __)__  __     |   /   |\n    |        |  | /    |  /|   |\n    /_______  /|__|  |______/ |___|\n            /                     \n_____________________________________________\n              author:EricWXY\n", o2 = "\nbackground: linear-gradient(135deg, orange 60%, cyan);\nbackground-clip: text;\ncolor: transparent;\nfont-size: 16px; \nline-height: 1;\nfont-family: monospace;\nfont-weight: 600;\n";
+    console.info(`%c${_2}`, o2);
+  }
+}(), o.add(n);
+const f = _(m);
 export {
-  a as ErButton,
-  m as ErButtonGroup,
+  i as ErAlert,
+  t as ErButton,
+  r as ErButtonGroup,
+  a as ErCollapse,
+  e as ErCollapseItem,
   s as ErIcon,
-  E as default
+  f as default
 };
