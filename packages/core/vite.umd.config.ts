@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
-import { compression } from 'vite-plugin-compression2'
+import compression from 'vite-plugin-compression'
 import shell from "shelljs"
 import { delay } from "lodash-es"
 import { hooksPlugin } from '@er-ui-element/vite-plugins'
@@ -26,7 +26,7 @@ export default defineConfig({
     plugins: [
         vue(),
         compression({
-            include: /.(cjs|css)/i
+            filter: /.(cjs|css)$/i,
         }),
         terser({
             compress: {
