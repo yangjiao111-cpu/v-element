@@ -1,10 +1,10 @@
-import { _ as e, w as t } from "./utils-CfOhrfHT.js";
+import { _ as e, w as t } from "./utils-RrMYRzzX.js";
 import { onMounted as a, watch as o, onUnmounted as l, defineComponent as i, ref as n, computed as r, watchEffect as u, openBlock as s, createElementBlock as v, mergeProps as c, toHandlers as p, renderSlot as d, createVNode as f, Transition as m, withCtx as g, createTextVNode as h, toDisplayString as _, createElementVNode as k, createCommentVNode as T } from "vue";
 import { createPopper as y } from "@popperjs/core";
 import { u as b } from "./hooks-DrdE-oTR.js";
-import { i as w, f as x, d as j, b as E } from "./vendor-CYsscUnA.js";
-const B = t(e(i({ name: "ErTooltip", __name: "Tooltip", props: { virtualRef: {}, virtualTriggering: { type: Boolean }, content: {}, trigger: { default: "hover" }, placement: { default: "bottom" }, manual: { type: Boolean }, disabled: { type: Boolean }, popperOptions: {}, transition: { default: "fade" }, showTimeout: { default: 0 }, hideTimeout: { default: 200 } }, emits: ["visible-change", "click-outside"], setup(e2, { expose: t2, emit: i2 }) {
-  const B2 = e2, L = i2, N = n(false), R = n({}), $ = n({}), M = n({}), O = n(), A = n(), D = n(), I = r(() => {
+import { b as w, f as x, d as j, c as E } from "./vendor-BX5TV4Bt.js";
+const B = e(i({ name: "ErTooltip", __name: "Tooltip", props: { virtualRef: {}, virtualTriggering: { type: Boolean }, content: {}, trigger: { default: "hover" }, placement: { default: "bottom" }, manual: { type: Boolean }, disabled: { type: Boolean }, popperOptions: {}, transition: { default: "fade" }, showTimeout: { default: 0 }, hideTimeout: { default: 200 } }, emits: ["visible-change", "click-outside"], setup(e2, { expose: t2, emit: i2 }) {
+  const B2 = e2, L2 = i2, N = n(false), R = n({}), $ = n({}), M = n({}), O = n(), A = n(), D = n(), I = r(() => {
     var _a;
     return B2.virtualTriggering ? ((_a = B2.virtualRef) == null ? void 0 : _a.ref) ?? B2.virtualRef ?? D.value : D.value;
   }), q = r(() => ({ placement: B2.placement, modifiers: [{ name: "offset", options: { offset: [0, 9] } }], ...B2.popperOptions })), z = r(() => "hover" === B2.trigger ? B2.showTimeout : 0), C = r(() => "hover" === B2.trigger ? B2.hideTimeout : 0), F = /* @__PURE__ */ new Map();
@@ -19,7 +19,7 @@ const B = t(e(i({ name: "ErTooltip", __name: "Tooltip", props: { virtualRef: {},
     N.value ? P() : K();
   }
   function S(e3) {
-    B2.disabled || (N.value = e3, L("visible-change", e3));
+    B2.disabled || (N.value = e3, L2("visible-change", e3));
   }
   function U() {
     var _a;
@@ -42,7 +42,7 @@ const B = t(e(i({ name: "ErTooltip", __name: "Tooltip", props: { virtualRef: {},
   }), B2.manual || U();
   const X = K;
   return b(O, () => {
-    L("click-outside"), "hover" === B2.trigger || B2.manual || N.value && P();
+    L2("click-outside"), "hover" === B2.trigger || B2.manual || N.value && P();
   }), o(N, (e3) => {
     e3 && I.value && A.value && (J = y(I.value, A.value, q.value));
   }, { flush: "post" }), o(() => B2.manual, (e3) => {
@@ -51,7 +51,7 @@ const B = t(e(i({ name: "ErTooltip", __name: "Tooltip", props: { virtualRef: {},
   }), o(() => B2.trigger, (e3, t3) => {
     e3 !== t3 && W();
   }), o(() => B2.disabled, (e3, t3) => {
-    e3 !== t3 && (G == null ? void 0 : G.cancel(), N.value = false, L("visible-change", false), W());
+    e3 !== t3 && (G == null ? void 0 : G.cancel(), N.value = false, L2("visible-change", false), W());
   }), u(() => {
     G = j(E(S, null, true), z.value), H = j(E(S, null, false), C.value);
   }), function(e3, t3, i3) {
@@ -77,7 +77,8 @@ const B = t(e(i({ name: "ErTooltip", __name: "Tooltip", props: { virtualRef: {},
   }), t2({ show: X, hide: function() {
     G == null ? void 0 : G.cancel(), S(false);
   } }), (t3, a2) => (s(), v("div", c({ class: "er-tooltip", ref_key: "containerNode", ref: O }, p($.value, true)), [e2.virtualTriggering ? d(t3.$slots, "default", { key: 1 }, void 0, true) : (s(), v("div", c({ key: 0, class: "er-tooltip__trigger", ref_key: "_triggerNode", ref: D }, p(R.value, true)), [d(t3.$slots, "default", {}, void 0, true)], 16)), f(m, { name: e2.transition, onAfterLeave: V }, { default: g(() => [N.value ? (s(), v("div", c({ key: 0, class: "er-tooltip__popper", ref_key: "popperNode", ref: A }, p(M.value, true)), [d(t3.$slots, "content", {}, () => [h(_(e2.content), 1)], true), a2[0] || (a2[0] = k("div", { id: "arrow", "data-popper-arrow": "" }, null, -1))], 16)) : T("", true)]), _: 3 }, 8, ["name"])], 16));
-} }), [["__scopeId", "data-v-f9676470"]]));
+} }), [["__scopeId", "data-v-f9676470"]]), L = t(B);
 export {
-  B as E
+  B as E,
+  L as a
 };

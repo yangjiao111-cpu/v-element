@@ -781,16 +781,22 @@ function Be(t2, r2) {
   return (h(t2) ? bt : Me)(t2, "function" == typeof (e2 = r2) ? e2 : z);
 }
 function De(t2) {
+  return "string" == typeof t2 || !h(t2) && s(t2) && "[object String]" == l(t2);
+}
+function ke(t2) {
   return s(t2) && 1 === t2.nodeType && !Vr(t2);
 }
-var ke = Object.prototype.hasOwnProperty;
-function Ce(t2, r2) {
+function Ce(t2) {
+  return "number" == typeof t2 || s(t2) && "[object Number]" == l(t2);
+}
+var Ne = Object.prototype.hasOwnProperty;
+function Re(t2, r2) {
   var e2 = -1, n2 = (r2 = Mr(r2, t2)).length;
   if (!n2) return true;
   for (var o2 = null == t2 || "object" != typeof t2 && "function" != typeof t2; ++e2 < n2; ) {
     var i2 = r2[e2];
     if ("string" == typeof i2) {
-      if ("__proto__" === i2 && !ke.call(t2, "__proto__")) return false;
+      if ("__proto__" === i2 && !Ne.call(t2, "__proto__")) return false;
       if ("constructor" === i2 && e2 + 1 < n2 && "string" == typeof r2[e2 + 1] && "prototype" === r2[e2 + 1]) {
         if (o2 && 0 === e2) continue;
         return false;
@@ -813,10 +819,10 @@ function Ce(t2, r2) {
     return r3 ? t3[r3 - 1] : void 0;
   }(r2))];
 }
-function Ne(t2) {
+function We(t2) {
   return Vr(t2) ? void 0 : t2;
 }
-var Re = function(t2) {
+var Ve = function(t2) {
   return _t(Dt(t2, void 0, Br), t2 + "");
 }(function(t2, r2) {
   var e2 = {};
@@ -831,20 +837,22 @@ var Re = function(t2) {
       var a2 = r3[o3], u2 = void 0;
       void 0 === u2 && (u2 = t3[a2]), n3 ? Ft(e3, a2, u2) : $t(e3, a2, u2);
     }
-  }(t2, te(t2), e2), n2 && (e2 = Te(e2, 7, Ne));
-  for (var o2 = r2.length; o2--; ) Ce(e2, r2[o2]);
+  }(t2, te(t2), e2), n2 && (e2 = Te(e2, 7, We));
+  for (var o2 = r2.length; o2--; ) Re(e2, r2[o2]);
   return e2;
 });
-function We(t2, r2, e2) {
+function Le(t2, r2, e2) {
   var n2 = true, o2 = true;
   if ("function" != typeof t2) throw new TypeError("Expected a function");
   return g(e2) && (n2 = "leading" in e2 ? !!e2.leading : n2, o2 = !("trailing" in e2) && o2), $e(t2, r2, { leading: n2, maxWait: r2, trailing: o2 });
 }
 export {
-  Lr as b,
+  Ce as a,
+  ke as b,
+  Lr as c,
   $e as d,
   Be as f,
   De as i,
-  Re as o,
-  We as t
+  Ve as o,
+  Le as t
 };

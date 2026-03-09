@@ -1,4 +1,10 @@
 <script setup lang="ts">
+const confirm = () => {
+  console.log('确认')
+}
+const cancel = () => {
+  console.log('取消')
+}
 </script>
 
 <template>
@@ -13,6 +19,9 @@
       this is content
     </slot>
   </er-alert>
+  <er-popconfirm title="确认信息" @confirm="confirm" @cancel="cancel">
+    <er-button>点击确认</er-button>
+  </er-popconfirm>
 </template>
 
 <style scoped>

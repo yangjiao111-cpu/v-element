@@ -1,0 +1,85 @@
+<script setup lang="ts">
+import {ref,computed} from 'vue'
+import ErTooltip from '../Tooltip/Tooltip.vue';
+import ErButton from '../Button/Button.vue'
+import {addUnit} from '@er-ui-element/utils'
+import type { PopconfirmProps,PopconfirmEmits } from './types';
+import type { TooltipInstance } from '../Tooltip';
+
+defineOptions({
+    name:'ErPopconfirm'
+})
+
+const props = withDefaults(defineProps<PopconfirmProps>(),{
+    title: "",
+    confirmButtonType: "primary",
+    icon: "question-circle",
+    iconColor: "#f90",
+    confirmButtonText:'确认',
+    cancelButtonText:'取消',
+    hideAfter: 200,
+    width: 150,
+})
+
+const tooltipRef = ref<TooltipInstance>()
+const style = computed(()=>({width:addUnit(props.width)}))
+const emits = defineEmits<PopconfirmEmits>()
+
+function hidePopper(){
+    tooltipRef.value?.hide()
+}
+
+function confirm(e:MouseEvent){
+    emits('confirm',e)
+    hidePopper()
+}
+
+function cancel(e:MouseEvent){
+    emits('cancel',e)
+    hidePopper()
+}
+
+</script>
+
+<template>
+    <er-tooltip ref="tooltipRef" trigger="click" :hide-timeout="hideAfter">
+    <template #content>
+      <div class="er-popconfirm" :style="style">
+        <div class="er-popconfirm__main">
+          <er-icon v-if="!hideIcon && icon" :icon="icon" :color="iconColor" />
+          {{ title }}
+        </div>
+        <div class="er-popconfirm__action">
+          <er-button
+            size="small"
+            class="er-popconfirm__cancel"
+            :type="cancelButtonType"
+            @click="cancel"
+          >
+            {{ cancelButtonText }}
+          </er-button>
+          <er-button
+            size="small"
+            class="er-popconfirm__confirm"
+            :type="confirmButtonType"
+            @click="confirm"
+          >
+            {{ confirmButtonText }}
+          </er-button>
+        </div>
+      </div>
+    </template>
+
+    <template v-if="$slots.default" #default>
+      <slot name="default"></slot>
+    </template>
+
+    <template v-if="$slots.reference" #default>
+      <slot name="reference"></slot>
+    </template>
+  </er-tooltip>
+</template>
+
+<style scoped>
+@import './style.css'
+</style>

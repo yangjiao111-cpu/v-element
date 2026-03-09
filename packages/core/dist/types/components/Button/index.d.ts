@@ -5,14 +5,12 @@ export declare const ErButton: {
         };
         icon: {
             type: import('vue').PropType<"string">;
-            required: true;
         };
         type: {
             type: import('vue').PropType<import('packages/core').ButtonType>;
         };
         circle: {
             type: import('vue').PropType<boolean>;
-            required: true;
         };
         tag: {
             type: import('vue').PropType<string | import('vue').Component>;
@@ -24,7 +22,6 @@ export declare const ErButton: {
         };
         disabled: {
             type: import('vue').PropType<boolean>;
-            required: true;
         };
         loading: {
             type: import('vue').PropType<boolean>;
@@ -76,14 +73,12 @@ export declare const ErButton: {
         };
         icon: {
             type: import('vue').PropType<"string">;
-            required: true;
         };
         type: {
             type: import('vue').PropType<import('packages/core').ButtonType>;
         };
         circle: {
             type: import('vue').PropType<boolean>;
-            required: true;
         };
         tag: {
             type: import('vue').PropType<string | import('vue').Component>;
@@ -95,7 +90,6 @@ export declare const ErButton: {
         };
         disabled: {
             type: import('vue').PropType<boolean>;
-            required: true;
         };
         loading: {
             type: import('vue').PropType<boolean>;
@@ -142,14 +136,12 @@ export declare const ErButton: {
     };
     icon: {
         type: import('vue').PropType<"string">;
-        required: true;
     };
     type: {
         type: import('vue').PropType<import('packages/core').ButtonType>;
     };
     circle: {
         type: import('vue').PropType<boolean>;
-        required: true;
     };
     tag: {
         type: import('vue').PropType<string | import('vue').Component>;
@@ -161,7 +153,6 @@ export declare const ErButton: {
     };
     disabled: {
         type: import('vue').PropType<boolean>;
-        required: true;
     };
     loading: {
         type: import('vue').PropType<boolean>;
