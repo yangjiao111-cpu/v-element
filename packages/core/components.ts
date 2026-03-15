@@ -11,7 +11,9 @@ import {
     ErDropdown,
     ErDropdownItem,
     ErMessage,
-    ErNotification
+    ErNotification,
+    ErMessageBox,
+    ErForm
 
 } from "../components";
 import type { Plugin } from 'vue';
@@ -29,5 +31,7 @@ export default [
     ErDropdownItem,
     ErConfigProvider,
     ErMessage,
-    ErNotification
+    ErNotification,
+    ErMessageBox,
+    ErForm
 ] as Plugin[];

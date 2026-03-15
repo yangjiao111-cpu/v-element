@@ -2,6 +2,8 @@
 import type {DropdownItemProps} from '@er-ui-element/components'
 import { ErNotification } from 'er-ui-element'
 import { ErMessage } from 'er-ui-element'
+import {ErMessageBox} from 'er-ui-element'
+import { ErInput } from '@er-ui-element/components/Input'
 const confirm = () => {
   console.log('确认')
 }
@@ -30,6 +32,15 @@ const openNotification = () => {
     position:'bottom-right'
   })
 }
+
+function openConfirm(){
+  ErMessageBox.confirm("proxy will fhidoshfiodshfd")
+  .then((action)=>{
+    ErMessage.info('dsadsa')
+  }).catch((action)=>{
+    ErMessage.warning('fdsfdsf')
+  })
+}
 </script>
 
 <template>
@@ -52,6 +63,8 @@ const openNotification = () => {
   </er-dropdown>
   <er-button @click="openSuccess">click to get message of success</er-button>
   <er-button @click="openNotification">click to open notification</er-button>
+  <er-button @click="openConfirm">测试MessageBox</er-button>
+  <ErInput></ErInput>
 </template>
 
 <style scoped>
