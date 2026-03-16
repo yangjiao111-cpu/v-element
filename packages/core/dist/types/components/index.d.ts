@@ -11,3 +11,4 @@ export * from './Notification';
 export * from './MessageBox';
 export * from './Form';
 export * from './Loading';
+export * from './Switch';

@@ -87,6 +87,7 @@ function openLoading2(){
   <ErInput></ErInput>
   <er-button @click="openLoading">click to open _loading</er-button>
   <er-button v-loading>用指令方式打开loading</er-button>
+  <er-switch></er-switch>
 </template>
 
 <style scoped>
