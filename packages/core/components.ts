@@ -15,7 +15,8 @@ import {
     ErMessageBox,
     ErForm,
     ErLoading,
-    ErSwitch
+    ErSwitch,
+    ErSelect
 
 } from "../components";
 import type { Plugin } from 'vue';
@@ -37,5 +38,6 @@ export default [
     ErMessageBox,
     ErForm,
     ErLoading,
-    ErSwitch
+    ErSwitch,
+    ErSelect
 ] as Plugin[];

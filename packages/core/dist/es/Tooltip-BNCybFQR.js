@@ -1,8 +1,8 @@
-import { _ as e, w as t } from "./utils-DiswYszl.js";
+import { _ as e, w as t } from "./utils-B2WdIr7B.js";
 import { onMounted as a, watch as o, onUnmounted as l, defineComponent as i, ref as n, computed as r, watchEffect as u, openBlock as s, createElementBlock as v, mergeProps as c, toHandlers as p, renderSlot as f, createVNode as d, Transition as m, withCtx as g, createTextVNode as h, toDisplayString as _, createElementVNode as k, createCommentVNode as T } from "vue";
 import { createPopper as y } from "@popperjs/core";
-import { u as b } from "./hooks-BFQBeDsw.js";
-import { g as w, f as j, h as x, j as E } from "./vendor-D30j_OjZ.js";
+import { u as b } from "./hooks-OP8606-a.js";
+import { g as w, f as j, h as x, j as E } from "./vendor-f3c6mRls.js";
 const B = e(i({ name: "ErTooltip", __name: "Tooltip", props: { virtualRef: {}, virtualTriggering: { type: Boolean }, content: {}, trigger: { default: "hover" }, placement: { default: "bottom" }, manual: { type: Boolean }, disabled: { type: Boolean }, popperOptions: {}, transition: { default: "fade" }, showTimeout: { default: 0 }, hideTimeout: { default: 200 } }, emits: ["visible-change", "click-outside"], setup(e2, { expose: t2, emit: i2 }) {
   const B2 = e2, L2 = i2, N = n(false), R = n({}), $ = n({}), M = n({}), O = n(), A = n(), D = n(), I = r(() => {
     var _a;
@@ -79,6 +79,6 @@ const B = e(i({ name: "ErTooltip", __name: "Tooltip", props: { virtualRef: {}, v
   } }), (t3, a2) => (s(), v("div", c({ class: "er-tooltip", ref_key: "containerNode", ref: O }, p($.value, true)), [e2.virtualTriggering ? f(t3.$slots, "default", { key: 1 }, void 0, true) : (s(), v("div", c({ key: 0, class: "er-tooltip__trigger", ref_key: "_triggerNode", ref: D }, p(R.value, true)), [f(t3.$slots, "default", {}, void 0, true)], 16)), d(m, { name: e2.transition, onAfterLeave: V }, { default: g(() => [N.value ? (s(), v("div", c({ key: 0, class: "er-tooltip__popper", ref_key: "popperNode", ref: A }, p(M.value, true)), [f(t3.$slots, "content", {}, () => [h(_(e2.content), 1)], true), a2[0] || (a2[0] = k("div", { id: "arrow", "data-popper-arrow": "" }, null, -1))], 16)) : T("", true)]), _: 3 }, 8, ["name"])], 16));
 } }), [["__scopeId", "data-v-f9676470"]]), L = t(B);
 export {
-  L as E,
-  B as T
+  B as E,
+  L as a
 };

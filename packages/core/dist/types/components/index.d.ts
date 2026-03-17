@@ -12,3 +12,4 @@ export * from './MessageBox';
 export * from './Form';
 export * from './Loading';
 export * from './Switch';
+export * from './Select';

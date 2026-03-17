@@ -1,6 +1,6 @@
 import { defineComponent as e, computed as a, ref as i, onMounted as t, watch as c, openBlock as l, createElementBlock as s, normalizeClass as n, createElementVNode as u, withKeys as o, unref as r, toDisplayString as d, createCommentVNode as v } from "vue";
-import { b as h } from "./hooks-BFQBeDsw.js";
-import { w as m } from "./utils-DiswYszl.js";
+import { b as h } from "./hooks-OP8606-a.js";
+import { w as m } from "./utils-B2WdIr7B.js";
 const p = ["id", "name", "disabled", "checked"], f = { class: "er-switch__core" }, _ = { class: "er-switch__core-inner" }, w = { key: 0, class: "er-switch__core-inner-text" }, k = m(e({ name: "ErSwitch", inheritAttrs: false, __name: "Switch", props: { modelValue: { type: [Boolean, String, Number] }, disabled: { type: Boolean }, activeText: {}, inactiveText: {}, activeValue: { type: [Boolean, String, Number], default: true }, inactiveValue: { type: [Boolean, String, Number], default: false }, name: {}, id: {}, size: {} }, emits: ["update:modelValue", "change"], setup(e2, { expose: m2, emit: k2 }) {
   const b = e2, x = k2, V = a(() => b.disabled), y = i(b.modelValue), T = i(), g = h().value, S = a(() => y.value === b.activeValue);
   function B() {

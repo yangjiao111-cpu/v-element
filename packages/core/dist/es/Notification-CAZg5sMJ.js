@@ -1,8 +1,8 @@
 import { defineComponent as t, ref as o, computed as e, onMounted as n, openBlock as s, createBlock as i, Transition as a, withCtx as l, withDirectives as r, createElementVNode as c, normalizeStyle as f, normalizeClass as u, createCommentVNode as d, toDisplayString as p, renderSlot as m, unref as v, createElementBlock as h, createVNode as g, withModifiers as y, vShow as _, isVNode as x, h as C, render as b, shallowReactive as k } from "vue";
-import { d as w, f as I, b as E } from "./hooks-BFQBeDsw.js";
-import { t as N, R as j, _ as O, b as z } from "./utils-DiswYszl.js";
-import { E as $ } from "./Icon-BX-aiFSd.js";
-import { j as B, i as D, l as M, f as R, p as A, q as L, s as W } from "./vendor-D30j_OjZ.js";
+import { d as w, f as I, b as E } from "./hooks-OP8606-a.js";
+import { t as N, R as j, _ as O, b as z } from "./utils-B2WdIr7B.js";
+import { E as $ } from "./Icon-nki9Ukht.js";
+import { j as B, i as D, l as M, f as R, p as A, q as L, s as W } from "./vendor-f3c6mRls.js";
 const q = ["info", "success", "warning", "danger"], H = ["top-right", "top-left", "bottom-right", "bottom-left"], T = { class: "er-notification__text" }, Z = { class: "er-notification__title" }, F = { class: "er-notification__content" }, G = { key: 1, class: "er-notification__close" }, J = O(t({ __name: "Notification", props: { title: {}, id: {}, zIndex: {}, position: {}, type: { default: "info" }, message: {}, duration: { default: 3e3 }, showClose: { type: Boolean, default: true }, offset: { default: 20 }, transitionName: { default: "fade" }, icon: {}, onClick: {}, onClose: {}, onDestory: {} }, setup(t2, { expose: x2 }) {
   const C2 = t2, b2 = o(false), k2 = o(), I2 = o(0), { topOffset: E2, bottomOffset: O2 } = w({ getLastBottomOffset: B(X, C2), offset: C2.offset, boxHeight: I2 }), z2 = e(() => D(C2.icon) ? C2.icon : N.get(C2.type)), R2 = e(() => C2.position.endsWith("right") ? "right" : "left"), A2 = e(() => C2.position.startsWith("top") ? "top" : "bottom"), L2 = e(() => ({ [A2.value]: E2.value + "px", zIndex: C2.zIndex }));
   let W2;
